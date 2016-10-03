@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--THis page is just to show family if theres something worng with the javascript I did-->
+
+<script src="ejs.js"></script>
+<script>
+    var ejs = require('ejs'),
+            family = ['Brandon', 'Andrew', 'Ryan', 'Susan'],
+            html = ejs.render('<%= family.join(", "); %>', {family: family});
+
+</script>
+
+<script src="headerFooter.js"></script>
+</body>
+</html>
+
+
+
